@@ -21,14 +21,15 @@ If you want, you can specify a value for retransmission probability `p`:
 
 Experimenting with many values for `p`
 --------------------------------------
-The `p_vs_delays.sh` Bash script was written for experimenting with
-mean delays using many different values for retransmission probability.
+The `experiments` directory contains scripts for experimenting with
+many different values for retransmission probability. You can simulate
+using values defined in `p_vs_delays.sh`:
 
-	./p_vs_delays.sh
+	bash experiments/p_vs_delays.sh
 
 You can then plot obtained results using `gnuplot` (if installed):
 
-	gnuplot plot_p_vs_delays.gnuplot -p
+	gnuplot experiments/plot_p_vs_delays.gnuplot -p
 
 You can also run both commands at once using:
 
