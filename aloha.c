@@ -10,9 +10,9 @@
 #define STATE_TX 2
 
 /* Simulation static parameters */
-#define ALPHA 0.2
+#define ALPHA 0.004
 #define N 100
-#define T 10000
+#define T 100000
 
 /* Probability of retransmission. */
 static double p = 0.04;
